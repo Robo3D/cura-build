@@ -77,9 +77,9 @@ set(CPACK_PACKAGE_INSTALL_DIRECTORY "Ultimaker Cura ${CURA_VERSION_MAJOR}.${CURA
 set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
 set(CPACK_NSIS_EXECUTABLES_DIRECTORY ".")
 set(CPACK_NSIS_INSTALLED_ICON_NAME "Cura.ico")
-set(CPACK_NSIS_MUI_ICON "cura.ico")
-set(CPACK_NSIS_MUI_UNIICON "cura.ico")
-set(CPACK_PACKAGE_ICON "cura.ico")
+set(CPACK_NSIS_MUI_ICON "Cura.ico")
+set(CPACK_NSIS_MUI_UNIICON "Cura.ico")
+set(CPACK_PACKAGE_ICON "Cura.ico")
 set(CPACK_NSIS_MENU_LINKS
     "https://ultimaker.com/en/support/software" "Online Documentation"
     "https://github.com/ultimaker/cura" "Development Resources"

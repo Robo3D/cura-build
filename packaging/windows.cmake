@@ -58,7 +58,7 @@ cpack_add_component(vcredist DISPLAY_NAME "Install Visual Studio 2015 Redistribu
 cpack_add_component(arduino DISPLAY_NAME "Install Arduino Drivers")
 
 set(CPACK_GENERATOR "NSIS")
-set(CPACK_PACKAGE_NAME "Ultimaker Cura")
+set(CPACK_PACKAGE_NAME "Cura for Robo")
 string(REPLACE " " "" CPACK_PACKAGE_NAME_NO_WHITESPACES ${CPACK_PACKAGE_NAME})
 set(CPACK_PACKAGE_VENDOR "Ultimaker")
 set(CPACK_PACKAGE_VERSION_MAJOR ${CURA_VERSION_MAJOR})

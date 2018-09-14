@@ -133,10 +133,10 @@ executables = [
 ]
 
 setup(
-    name = "Ultimaker Cura",
+    name = "Cura for Robo",
     version = "@CURA_MAJOR_VERSION@.@CURA_MINOR_VERSION@.@CURA_PATCH_VERSION@",
-    author = "Ultimaker B.V.",
-    url="http://software.ultimaker.com/",
+    author = "Robo",
+    url="http://robo3d.com/software",
     description = "3D Slicer Software",
     license="GNU LESSER GENERAL PUBLIC LICENSE (LGPL)",
 

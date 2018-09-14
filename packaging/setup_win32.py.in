@@ -139,7 +139,7 @@ build_options = {
 executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
-               targetName = "Cura.exe",
+               targetName = "Robo_Cura.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
                ),
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
@@ -147,16 +147,16 @@ executables = [
                targetName = "CuraCLI.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
                ),
-    
+
 ]
 
 setup(
-    name = "Ultimaker Cura",
+    name = "Cura for Robo",
     version = "@CURA_VERSION_MAJOR@.@CURA_VERSION_MINOR@.@CURA_VERSION_PATCH@",
-    description = "Ultimaker Cura",
-    long_description = "Ultimaker Cura - 3D Printing Software",
-    author = "Ultimaker B.V.",
-    url = "http://software.ultimaker.com/",
+    description = "Cura for Robo",
+    long_description = "Cura for Robo - 3D Printing Software",
+    author = "Robo",
+    url = "http://robo3d.com/software",
     license = "GNU LESSER GENERAL PUBLIC LICENSE (LGPL)",
 
     options = {"build_exe": build_options},

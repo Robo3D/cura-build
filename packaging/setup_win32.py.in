@@ -139,7 +139,7 @@ build_options = {
 executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
-               targetName = "Robo_Cura.exe",
+               targetName = "Cura.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
                ),
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",

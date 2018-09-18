@@ -156,3 +156,18 @@ cmake ..
 make
 make package
 ```
+
+## DOCKER
+### Build
+```
+docker build -t cura-build
+```
+
+### Run
+```
+docker run -it --rm \
+    --privileged=true \
+    -v <Path you would like the output>:/root/cura-build/build \
+    cura-build
+
+```

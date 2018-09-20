@@ -1,4 +1,4 @@
-FROM cura_build_env:3.4
+FROM ximidar/cura_build_env:3.4
 
 
 ENV ROBOCURABUILD=/root/cura-build

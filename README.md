@@ -47,24 +47,18 @@ On Windows, the following dependencies are needed for building:
 * **cx_Freeze** (https://pypi.python.org/pypi/cx_Freeze)
   The easiest way to install this is to use a wheel (*.whl file) and install it via `pip install <your_whl_file>.whl`. You may have to add `<python dir>/Scripts` to you `%PATH%`. (Last tested version was: cx_Freeze-5.0-cp35-cp35m-win_amd64.whl)
 * **NSIS 3** (http://nsis.sourceforge.net/Main_Page) for creating the installer. Additional NSIS scripts are shipped with this project.
-
 Make sure these dependencies are available from your path.
-
 Additionally, for 32-bit builds:
-
 * Perl (http://www.activestate.com/activeperl, Required to build Qt)
 * Create in the user directory a file named pydistutils.cfg with the following contents:
 ```shell
 [build]
 compiler=mingw32
 ```
-
 For 64-bit builds:
-
 * PyQt 5.4 (https://riverbankcomputing.com/software/pyqt/download5, Building PyQt currently fails using MinGW 64-bit)
 * Install protobuf.wheel found in cura-build-binaries (TODO: create cura-build-binaries repo)
 * Create empty ```__init__.py``` in c:\Python34\Lib\site-packages\google (TODO: make it part of the proto.wheel installation)
-
 ```shell
 REM 32-bit
 git clone git@github.com:Ultimaker/cura-build.git

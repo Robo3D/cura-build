@@ -63,6 +63,8 @@ build_options = {
         ("@EXTERNALPROJECT_INSTALL_PREFIX@/share/uranium/resources", "resources"),
         ("@CMAKE_PREFIX_PATH@/lib/plugins", "qt/plugins"),
         ("@CMAKE_PREFIX_PATH@/lib/qml", "qt/qml"),
+        # ("@QT_INSTALL_LOCATION@/5.10.1/gcc_64/plugins", "qt/plugins"),
+        # ("@QT_INSTALL_LOCATION@/5.10.1/gcc_64/qml", "qt/qml"),
     ],
     "optimize": 2,
     "bin_path_includes": [
@@ -70,6 +72,7 @@ build_options = {
         "/lib64",
         "/usr/lib",
         "/usr/lib64",
+        # "@QT_INSTALL_LOCATION@/5.10.1/gcc_64/lib"
     ],
     "bin_includes": [
         "libssl3",

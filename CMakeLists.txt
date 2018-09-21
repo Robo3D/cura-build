@@ -24,6 +24,8 @@ get_filename_component(CMAKE_PREFIX_PATH
                        ${CMAKE_PREFIX_PATH}
                        ABSOLUTE
                        CACHE FORCE)
+# Set QT install location
+#set(QT_INSTALL_LOCATION ${CMAKE_PREFIX_PATH}/Qt/)
 
 set(EXTERNALPROJECT_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/inst)
 
@@ -51,6 +53,8 @@ set(CURA_VERSION "${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}.${CURA_VERSION_PAT
 if(NOT "${CURA_VERSION_EXTRA}" STREQUAL "")
     set(CURA_VERSION "${CURA_VERSION}-${CURA_VERSION_EXTRA}")
 endif()
+
+
 
 # Build projects step
 add_custom_target(projects ALL COMMENT "Building Projects...")

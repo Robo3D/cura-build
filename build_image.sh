@@ -1,7 +1,7 @@
 # @Author: matt
 # @Date:   2018-09-14 18:14:05
 # @Last Modified by:   Matt Pedler
-# @Last Modified time: 2018-09-18 16:32:22
+# @Last Modified time: 2018-09-21 10:34:32
 #!/bin/sh
 
 ROBOCURABUILD=/root/cura-build
@@ -9,6 +9,7 @@ cd $ROBOCURABUILD
 
 mkdir build 
 cd $ROBOCURABUILD/build
+export Qt5_DIR="/usr/local/Qt/5.10.1/gcc_64/"
 #gpg --gen-key # setup a key to sign with
 cmake3 .. -DArcus_DIR="/usr/local/lib/cmake/Arcus" \
           -DBUILD_PACKAGE=true \
